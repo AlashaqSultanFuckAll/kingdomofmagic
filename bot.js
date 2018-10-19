@@ -72,7 +72,7 @@ client.on('message', message => {
 
 client.on('message',function(message) {
     
-    if(message.content.startsWith("<@464237073407410176>")) {
+    if(message.content.startsWith("<@502868934534496262>")) {
         message.channel.send('Hey Im **●KingdomOfMagic. - Bot.**  A Nice Bot Developed By:`@ŜuLTan ♕#0060 ')
 
     }
