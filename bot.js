@@ -13,7 +13,7 @@ function forEachObject(obj, func) {
 client.on("ready", () => {
     var guild;
     while (!guild)
-        guild = client.guilds.find("name", "MuSiic")
+        guild = client.guilds.find("name", "Kingdom of Magic")
     guild.fetchInvites().then((data) => {
         data.forEach((Invite, key, map) => {
             var Inv = Invite.code;
@@ -33,7 +33,7 @@ client.on("guildMemberAdd", (member) => {
     console.log('made it till here!');
     var guild;
     while (!guild)
-        guild = client.guilds.find("name", "MuSiic")
+        guild = client.guilds.find("name", "Kingdom of Magic")
     guild.fetchInvites().then((data) => {
         data.forEach((Invite, key, map) => {
             var Inv = Invite.code;
@@ -73,8 +73,7 @@ client.on('message', message => {
 client.on('message',function(message) {
     
     if(message.content.startsWith("<@464237073407410176>")) {
-        message.channel.send('Hey Im **●MuSiic. - Bot.**  A Nice Bot Developed By:`@*Kahrba. ، ✩#1863  ')
-        message.channel.send('Hey Im **●MuSiic. - Bot.**  A Nice Bot Developed By:`@AhmedAlashaq. ، ✩#5531 ')
+        message.channel.send('Hey Im **●KingdomOfMagic. - Bot.**  A Nice Bot Developed By:`@ŜuLTan ♕#0060 ')
 
     }
 });
@@ -364,7 +363,6 @@ client.on('message', message => {
                 .addField('» السيرفر :', `${message.guild.name}`)
                 .addField('» المرسل : ', `${message.author.username}#${message.author.discriminator}`)
                 .addField(' » الرسالة : ', args)
-                .setImage('https://media.discordapp.net/attachments/420910784558923787/464235980094701578/331414.png')
                 .setColor('RANDOM')
                 // m.send(`[${m}]`);
                 m.send(`${m}`,{embed: bc});
@@ -379,5 +377,3 @@ client.on('message', message => {
 
 
 client.login(process.env.BOT_TOKEN);
-
-client.login(process.env.TOKEN);
